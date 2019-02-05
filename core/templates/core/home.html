@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div style="padding-top:50px; text-align:center;">
+        <h1>Operaciones matemáticas</h1>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">                    
+                {{ form.number1 }}
+            </div>
+            <div class="form-group">                    
+                {{ form.number2 }}
+            </div>
+            <br>
+            <input type="button" class="btn btn-primary btn-lg btn-block" value="Suma">
+            <input type="button" class="btn btn-primary btn-lg btn-block" value="Resta">
+            <input type="button" class="btn btn-primary btn-lg btn-block" value="Potencia">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -10,5 +10,11 @@ class GetNumbers(FormView):
     template_name = 'core/home.html'
     form_class = NumbersForm
 
+class Suma(TemplateView):
+    template_name = 'core/suma.html'
 
+class Resta(TemplateView):
+    template_name = 'core/resta.html'
 
+class Potencia(TemplateView):
+    template_name = 'core/potencia.html'
